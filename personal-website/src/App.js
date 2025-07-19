@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import './CSS/App.css';
+import Navbar from './Navbar.js';
 
 function App() {
   return (
     <div className="App">
+
+      <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          A portfolio website.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Made by Yin Wah
       </header>
+      <div id="Welcome-Information">
+        <p>
+          All About Yin Wah
+        </p>
+      </div>
+
+      <div id="Quick-Fact-Boxes">
+        <h1>
+          Quick Fact Boxes
+        </h1>
+      </div>
+
+      <div id="Connect With Me">
+
+      </div>
     </div>
+
+
+
   );
 }
 
