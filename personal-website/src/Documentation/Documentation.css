@@ -1,0 +1,38 @@
+#doc-page {
+    background-color: #282c34;
+    /* 👈 Use the variable here */
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+    /* 👈 Smooth transition */
+}
+
+
+
+#doc-page h1,
+#doc-page h2 {
+    padding-top: 60px;
+}
+
+#doc-page>h1 {
+    font-size: 100px;
+    margin-top: 15%;
+}
+
+#doc-page h2 {}
+
+
+/* Find a way to center the content. */
+#doc-list dt,
+#doc-list dd {
+    text-align: center
+}
+
+.doc-list {
+    padding-top: 36px;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
