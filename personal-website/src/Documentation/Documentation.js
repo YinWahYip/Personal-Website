@@ -5,18 +5,29 @@ function DocPage() {
         <>
             <div id="doc-page">
                 <h1>Documentation</h1>
-                <h2>Because an <i>About me </i>
-                    would be soooooo much more "interesting"</h2>
+                <h2>
+                    Because an <i>About me</i> would be soooooo much more "interesting"
+                </h2>
+                <a href="#info-box" className="scroll-arrow">↓</a>
+                <div className="scroll-space" />
 
-                <dl className='doc-list'>
-                    <dt>Origins</dt>
-                    <dd>Name</dd>
-                    <li>Raised</li>
+                <div id="info-box" className="info-box">
+                    <h3>Fun Fact</h3>
+                    <p>I built my first website using React and Three.js!</p>
+                </div>
 
-                </dl>
-
-
+                <section className="origin-section">
+                    <h1>Origins</h1>
+                    <dl className="doc-list">
+                        <dt>Name</dt>
+                        <dd>Yin Wah Yip</dd>
+                        <dt>Raised</dt>
+                        <dd>Beijing, China</dd>
+                    </dl>
+                </section>
             </div>
+
+
 
 
 
@@ -26,17 +37,6 @@ function DocPage() {
 
 
 }
-window.addEventListener("scroll", () => {
-    const scrollPosition = window.scrollY / (document.body.scrollHeight - window.innerHeight);
 
-    const startColor = { r: 40, g: 44, b: 52 };
-    const endColor = { r: 90, g: 40, b: 120 };
-
-    const r = Math.round(startColor.r + (endColor.r - startColor.r) * scrollPosition);
-    const g = Math.round(startColor.g + (endColor.g - startColor.g) * scrollPosition);
-    const b = Math.round(startColor.b + (endColor.b - startColor.b) * scrollPosition);
-
-    document.documentElement.style.setProperty("--accent-color", `rgb(${r}, ${g}, ${b})`);
-});
 
 export default DocPage;

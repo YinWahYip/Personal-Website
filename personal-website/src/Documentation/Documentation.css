@@ -1,38 +1,115 @@
 #doc-page {
     background-color: #282c34;
-    /* 👈 Use the variable here */
     color: white;
-    min-height: 100vh;
-    padding: 20px;
+    min-height: 200vh;
+    /* ✅ doubles scroll height */
+    padding: 40px;
     font-family: sans-serif;
     transition: background-color 0.3s ease;
-    /* 👈 Smooth transition */
 }
 
 
 
-#doc-page h1,
-#doc-page h2 {
+.doc-page h1,
+.doc-page h2 {
     padding-top: 60px;
 }
 
-#doc-page>h1 {
+#doc-page h1 {
     font-size: 100px;
     margin-top: 15%;
 }
 
-#doc-page h2 {}
+#doc-page h2 {
+    font-size: 30px;
+}
 
 
 /* Find a way to center the content. */
 #doc-list dt,
 #doc-list dd {
+    padding-top: 30px;
     text-align: center
 }
+
 
 .doc-list {
     padding-top: 36px;
     font-size: 30px;
     position: relative;
     text-align: center;
+    /* centers inline content */
+}
+
+.doc-list dt {
+    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.doc-list dd {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.scroll-space {
+    height: 50vh;
+    /* creates a full-screen gap below the header */
+}
+
+.scroll-arrow {
+    display: block;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(8px);
+    }
+
+    60% {
+        transform: translateY(4px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#info-box {
+    scroll-margin-top: 30vh;
+    /* adjust this value to center better */
+}
+
+#info-box {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info-box {
+    background-color: #3a3f47;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    min-height: 450px;
 }
