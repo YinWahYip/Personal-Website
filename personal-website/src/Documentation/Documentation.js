@@ -11,20 +11,27 @@ function DocPage() {
                 <a href="#info-box" className="scroll-arrow">↓</a>
                 <div className="scroll-space" />
 
-                <div id="info-box" className="info-box">
-                    <h3>Fun Fact</h3>
-                    <p>I built my first website using React and Three.js!</p>
+                <div id="info-box" class="info-box-1">
+                    <div class="item info-block-1">
+                        <h1>Yin Wah Yip</h1>
+                        <h2><code>birth()</code></h2>
+                        <p>The <code>birth()</code> method returns 3 integers: Date, Month, Year</p>
+                        <p><code>yinwah.birth()</code> returns: <br></br> </p>
+
+                    </div>
+
+                    <div class="item headshot-1"></div>
+                    <div class="item item-1"></div>
                 </div>
 
-                <section className="origin-section">
-                    <h1>Origins</h1>
-                    <dl className="doc-list">
-                        <dt>Name</dt>
-                        <dd>Yin Wah Yip</dd>
-                        <dt>Raised</dt>
-                        <dd>Beijing, China</dd>
-                    </dl>
-                </section>
+                <div id="info-box2" class="info-box2">
+                    <div class="item info-block-2"></div>
+                    <div class="item headshot-2"></div>
+                    <div class="item item-2"></div>
+                </div>
+
+                <div className="scroll-space" />
+
             </div>
 
 
