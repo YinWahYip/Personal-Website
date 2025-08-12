@@ -29,11 +29,25 @@ function DocPage() {
                         <p><code>sleep()</code> takes in 2 parameters of type integer</p>
                         <p><code>yinwah.birth()</code> returns:<br /> <code>4/30/2003</code></p>
                     </div>
-                    <div class="item headshot-2"></div>
+                    <div class="item headshot-2">
+
+                    </div>
                     <div class="item item-2"></div>
 
-                    <div class="item food-block"></div>
-                    <div class="item headshot-3"></div>
+                    <div class="item food-block">
+                        <h1><code>.food()</code></h1>
+                        <h2><em><u>Note:</u> not to be confused with</em>  <code>.eat()</code> <em>or</em> <code>.cook()</code></h2>
+                        <p>
+                            <code>.food()</code> takes in a string of type 'food' <br></br>
+                            and returns appropriate <code>code</code>: <code>"can't stop, won't stop"</code>.
+                        </p>
+                        <p><em>A food enthusiast, Yin Wah is always on the hunt for his next
+                            <br></br>
+                            favorite meal. Ideally, something spicy and can incorporate rice.
+                        </em>
+                        </p>
+                    </div>
+                    <div class="item foodshot-3"></div>
                     <div class="item item-3"></div>
                 </div>
 
@@ -49,7 +63,6 @@ function DocPage() {
         </>
 
     );
-
 
 }
 
