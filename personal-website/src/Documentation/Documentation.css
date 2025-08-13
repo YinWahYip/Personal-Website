@@ -102,7 +102,7 @@ html {
     grid-column: 9 / 7;
     grid-row: 1 / span 2;
     /* right side, tall card */
-    background: rgb(252, 139, 69);
+    background: rgb(214, 118, 59);
     border-radius: 40px;
     padding: 20px;
     color: white;
@@ -153,6 +153,11 @@ code {
     /* left side card */
 }
 
+.info-block-2 h1,
+.info-block-2 p {
+    transform: translateY(-50px);
+}
+
 .headshot-2 {
     grid-column: 7 / span 2;
     grid-row: 5 / span 2;
@@ -175,12 +180,10 @@ code {
 }
 
 .info-block-2 {
-    background: rgb(37, 218, 221);
+    background: rgb(64, 192, 194);
     border-radius: 20px;
+    color: rgb(255, 255, 255);
 }
-
-
-
 
 .food-block {
     background: rgb(200, 150, 255);
@@ -223,5 +226,21 @@ code {
     /* small nudge closer to h1 */
 }
 
+#quick-sleep {
+    font-size: 20px;
+}
+
+
+#quick-meal-info {
+
+    font-size: 20px;
+}
+
+
+
+.bug-label {
+    color: rgb(255, 69, 69);
+    font-weight: bold;
+}
 
 /* tweak if you want a peek effect */

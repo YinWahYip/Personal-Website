@@ -26,8 +26,10 @@ function DocPage() {
 
                     <div class="item info-block-2">
                         <h1><code>.sleep()</code></h1>
-                        <p><code>sleep()</code> takes in 2 parameters of type integer</p>
-                        <p><code>yinwah.birth()</code> returns:<br /> <code>4/30/2003</code></p>
+                        <p><code>.sleep(hours)</code> – Goes offline for <em>hours</em> to restore energy.</p>
+                        <p>Returns: +10 energy, +5 focus, and immunity to small talk for 3 hours.</p>
+                        <p id="quick-sleep"><strong>IMPORTANT:</strong> Requires <code>hours ≥ 8</code> to prevent catastrophic downtime<br></br>
+                            (<span class="bug-label"> KNOWN BUG</span> — will try to fix next patch )</p>
                     </div>
                     <div class="item headshot-2">
 
@@ -38,12 +40,13 @@ function DocPage() {
                         <h1><code>.food()</code></h1>
                         <h2><em><u>Note:</u> not to be confused with</em>  <code>.eat()</code> <em>or</em> <code>.cook()</code></h2>
                         <p>
-                            <code>.food()</code> takes in a string of type 'food' <br></br>
-                            and returns appropriate <code>code</code>: <code>"can't stop, won't stop"</code>.
+                            <br></br>Returns the corresponding HTTP code <br></br><code>406: Not Acceptable</code> or
+                            <code>202a: Accep-tional </code>
+
                         </p>
-                        <p><em>A food enthusiast, Yin Wah is always on the hunt for his next
+                        <p id="quick-meal-info"><em>* A food enthusiast, Yin Wah is always on the hunt for his next
                             <br></br>
-                            favorite meal. Ideally, something spicy and can incorporate rice.
+                            favorite meal. Ideally, something spicy and pairs well with rice.
                         </em>
                         </p>
                     </div>
