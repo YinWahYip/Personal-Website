@@ -9,7 +9,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,4 +20,71 @@
 }
 
 
+/* CSS/App.css */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background: #000;
+}
+
+/* remove these if you added them earlier */
+/* html, body, #root, .App { height: 100%; } */
+/* .App { overflow: hidden; } */
+
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Optional styling for your header so it stands out on black */
+.App-header {
+  padding: 2rem 1rem;
+  background: #111;
+  color: #fff;
+}
+
+/* NEW: a wrapper that gives the track some height and centers it */
+.image-track-wrapper {
+  height: 80vh;
+  /* adjust to taste (60–100vh) */
+  background: #000;
+  display: grid;
+  place-items: center;
+  /* centers the track vertically */
+  overflow: hidden;
+  /* hides the edges while dragging */
+}
+
+/* Track is now in normal flow (no absolute, no translateY) */
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  transform: translateX(0%);
+  user-select: none;
+  touch-action: pan-y;
+  /* allow vertical page scroll on touch */
+  cursor: grab;
+  will-change: transform;
+}
+
+#image-track:active {
+  cursor: grabbing;
+}
+
+.image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 1.25vmin;
+}
