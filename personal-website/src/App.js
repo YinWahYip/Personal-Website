@@ -15,24 +15,30 @@ import pic6 from "./images/WechatIMG903.jpg";
 import pic7 from "./images/WechatIMG904.jpg";
 import pic8 from "./images/20250109_212819.jpg";
 
+// ...
 function Home() {
   const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
-
   return (
     <>
+      <div id="image-track">
+        <h1>
+          Adventures Peoples Places
+        </h1>    <ImageTrack images={images} />
+      </div>
+
       <header className="App-header">
         <p>A portfolio made by Yin Wah</p>
         For you
       </header>
 
-      <section className="image-track-wrapper">
-        <ImageTrack images={images} />
-      </section>
 
-      <div style={{ height: 1200 }} /> {/* demo spacer to prove page scroll works */}
+
+      {/* rest of your page content so vertical scroll still works */}
+      <div style={{ height: 1000 }} />
     </>
   );
 }
+
 
 
 export default function App() {

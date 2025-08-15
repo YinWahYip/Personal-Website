@@ -30,10 +30,6 @@ body {
   background: #000;
 }
 
-/* remove these if you added them earlier */
-/* html, body, #root, .App { height: 100%; } */
-/* .App { overflow: hidden; } */
-
 :root {
   color-scheme: light dark;
 }
@@ -47,44 +43,56 @@ body {
 }
 
 /* Optional styling for your header so it stands out on black */
+/* Keep the header in normal flow and the track below it */
 .App-header {
-  padding: 2rem 1rem;
-  background: #111;
+  background: #000;
   color: #fff;
+  font-size: 40px;
+
 }
 
-/* NEW: a wrapper that gives the track some height and centers it */
 .image-track-wrapper {
-  height: 80vh;
-  /* adjust to taste (60–100vh) */
+  max-height: 100vh;
+  /* stage height */
   background: #000;
   display: grid;
   place-items: center;
-  /* centers the track vertically */
   overflow: hidden;
-  /* hides the edges while dragging */
-}
-
-/* Track is now in normal flow (no absolute, no translateY) */
-#image-track {
-  display: flex;
-  gap: 4vmin;
-  transform: translateX(0%);
-  user-select: none;
+  /* hide edges during wrap */
   touch-action: pan-y;
-  /* allow vertical page scroll on touch */
   cursor: grab;
-  will-change: transform;
 }
 
-#image-track:active {
+.image-track-wrapper:active {
   cursor: grabbing;
 }
 
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  will-change: transform;
+  padding-top: 4rem;
+}
+
+
 .image {
   width: 40vmin;
-  height: 56vmin;
+  height: 60vmin;
   object-fit: cover;
   object-position: 50% 50%;
-  border-radius: 1.25vmin;
+  /* updated dynamically for parallax */
+  border-radius: 10px;
+
+}
+
+#image-track {
+  padding-left: 35px;
+  background-color: rgb(0, 0, 0);
+  font-size: 40px;
+  padding-top: 150px;
+}
+
+#image-track h1 {
+
+  padding-top: 10%;
 }
