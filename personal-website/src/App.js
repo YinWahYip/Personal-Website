@@ -6,14 +6,14 @@ import Navbar from "./Navbar";
 import DocPage from "./Documentation/Documentation";
 import ImageTrack from "./ImageTrack";
 
-import pic1 from "./images/20241205_171619.jpg";
-import pic2 from "./images/20250106_073524.jpg";
-import pic3 from "./images/20250106_073846.jpg";
-import pic4 from "./images/20250106_165938.jpg";
-import pic5 from "./images/20250108_172931.jpg";
+import pic1 from "./images/20250106_073524.jpg";
+import pic2 from "./images/20250106_073846.jpg";
+import pic3 from "./images/20250108_172931.jpg";
+import pic4 from "./images/20250109_212819.jpg";
+import pic5 from "./images/20241205_171619.jpg";
 import pic6 from "./images/WechatIMG903.jpg";
 import pic7 from "./images/WechatIMG904.jpg";
-import pic8 from "./images/20250109_212819.jpg";
+import pic8 from "./images/20250106_165938.jpg";
 
 // ...
 function Home() {
@@ -27,19 +27,14 @@ function Home() {
       </div>
 
       <header className="App-header">
-        <p>A portfolio made by Yin Wah</p>
-        For you
+        <h1>A portfolio made by Yin Wah</h1>
+
       </header>
-
-
-
       {/* rest of your page content so vertical scroll still works */}
       <div style={{ height: 1000 }} />
     </>
   );
 }
-
-
 
 export default function App() {
   return (

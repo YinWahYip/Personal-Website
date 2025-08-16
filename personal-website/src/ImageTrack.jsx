@@ -71,7 +71,17 @@ export default function ImageTrack({ images = [] }) {
         applyTransform(0);
         e.preventDefault();
     };
-
+    // Auto-scroll ticker
+    useLayoutEffect(() => {
+        let raf;
+        const tick = () => {
+            s.current.tx = clampWrap(s.current.tx - 0.8); // adjust speed here
+            applyTransform(0);
+            raf = requestAnimationFrame(tick);
+        };
+        raf = requestAnimationFrame(tick);
+        return () => cancelAnimationFrame(raf);
+    }, [clampWrap]);
     return (
         <section
             ref={wrapperRef}

@@ -7,19 +7,6 @@
   pointer-events: none;
 }
 
-
-.App-header {
-  background-color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
 /* CSS/App.css */
 * {
   box-sizing: border-box;
@@ -27,7 +14,6 @@
 
 body {
   margin: 0;
-  background: #000;
 }
 
 :root {
@@ -38,17 +24,30 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
+
+
+
+
+
 
 /* Optional styling for your header so it stands out on black */
 /* Keep the header in normal flow and the track below it */
 .App-header {
-  background: #000;
-  color: #fff;
   font-size: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    /* dark overlay */
+    url('../images/goldbridge.jpg') center/cover no-repeat;
+}
 
+.App-header h1 {
+  font-weight: bold;
 }
 
 .image-track-wrapper {
@@ -63,21 +62,18 @@ body {
   cursor: grab;
 }
 
-.image-track-wrapper:active {
-  cursor: grabbing;
-}
-
 #image-track {
+  background-color: black;
   display: flex;
   gap: 4vmin;
   will-change: transform;
   padding-top: 4rem;
+  min-height: 95vh;
 }
-
 
 .image {
   width: 40vmin;
-  height: 60vmin;
+  height: 70vmin;
   object-fit: cover;
   object-position: 50% 50%;
   /* updated dynamically for parallax */
@@ -87,12 +83,11 @@ body {
 
 #image-track {
   padding-left: 35px;
-  background-color: rgb(0, 0, 0);
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 150px;
 }
 
 #image-track h1 {
-
-  padding-top: 10%;
+  text-align: left;
+  padding-top: 15%;
 }
