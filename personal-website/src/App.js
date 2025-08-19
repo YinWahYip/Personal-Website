@@ -27,9 +27,12 @@ function Home() {
       </div>
 
       <header className="App-header">
-        <h1>A portfolio made by Yin Wah</h1>
+        <h1>A personal website built by Yin Wah</h1>
 
       </header>
+      <div>
+        Projects / What i'm up to?
+      </div>
       {/* rest of your page content so vertical scroll still works */}
       <div style={{ height: 1000 }} />
     </>
