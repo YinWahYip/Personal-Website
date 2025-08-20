@@ -65,7 +65,7 @@ body {
 #image-track {
   background-color: black;
   display: flex;
-  gap: 1vmin;
+  gap: 3vmin;
   will-change: transform;
   padding-top: 4rem;
   min-height: 75vh;
@@ -91,6 +91,14 @@ body {
   /* instead of fixed vmin height */
   border-radius: 10px;
   object-fit: cover;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  /* reset default figure margin */
 }
 
 #image-track h1 {
