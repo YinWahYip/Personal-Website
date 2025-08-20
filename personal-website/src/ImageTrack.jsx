@@ -12,6 +12,18 @@ export default function ImageTrack({ images = [] }) {
         tx: 0,         // current translateX (px)
         segW: 0        // width of one image-set (px)
     });
+    const captions = [
+        "1",
+        "Mr. Fancy Pants",
+        "SoFi HQ",
+        "In-n-Out",
+        "President of Villanova, Peter M. Donohue",
+        "🗽",
+        "🐸",
+        "CEO of Arista, Jayshree Ullal",
+
+    ];
+
 
     // Build 3 copies for seamless wrap
     const tripled = [...images, ...images, ...images];
@@ -75,7 +87,7 @@ export default function ImageTrack({ images = [] }) {
     useLayoutEffect(() => {
         let raf;
         const tick = () => {
-            s.current.tx = clampWrap(s.current.tx - 0.8); // adjust speed here
+            s.current.tx = clampWrap(s.current.tx - 0.4); // adjust speed here
             applyTransform(0);
             raf = requestAnimationFrame(tick);
         };
@@ -92,10 +104,16 @@ export default function ImageTrack({ images = [] }) {
             onPointerMove={onPointerMove}
             onWheel={onWheel}
         >
+
             <div id="image-track" ref={trackRef} aria-label="Infinite image gallery">
-                {tripled.map((src, i) => (
-                    <img key={i} className="image" src={src} alt={`pic-${(i % images.length) + 1}`} draggable="false" />
-                ))}
+                {
+                    tripled.map((src, i) => (
+                        <figure key={i} className="image-card">
+                            <img className="image" src={src} alt={captions[i % captions.length]} />
+                            <figcaption className="caption">{captions[i % captions.length]}</figcaption>
+                        </figure>
+                    ))}
+
             </div>
         </section>
     );

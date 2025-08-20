@@ -25,13 +25,6 @@ body {
 }
 
 
-
-
-
-
-
-/* Optional styling for your header so it stands out on black */
-/* Keep the header in normal flow and the track below it */
 .App-header {
   font-size: 40px;
   min-height: 100vh;
@@ -52,6 +45,7 @@ body {
   font-weight: bold;
 }
 
+/* controls outer container for your entire image track section. */
 .image-track-wrapper {
   max-height: 100vh;
   /* stage height */
@@ -62,9 +56,32 @@ body {
   /* hide edges during wrap */
   touch-action: pan-y;
   cursor: grab;
-
+  height: 100dvh;
+  overflow: hidden;
+  padding-bottom: 75px;
 }
 
+/* controls strip of images moving */
+#image-track {
+  background-color: black;
+  display: flex;
+  gap: 1vmin;
+  will-change: transform;
+  padding-top: 4rem;
+  min-height: 75vh;
+  padding-left: 35px;
+  font-size: 50px;
+}
+
+/* individual images */
+.image {
+  width: 40vmin;
+  height: 70vmin;
+  object-fit: cover;
+  object-position: 50% 50%;
+  /* updated dynamically for parallax */
+  border-radius: 10px;
+}
 
 /* Keep cards consistent at any zoom */
 .image {
@@ -76,43 +93,17 @@ body {
   object-fit: cover;
 }
 
-/* Use dynamic viewport to avoid mobile/url-bar issues */
-.image-track-wrapper {
-  height: 100dvh;
-  /* instead of max-height: 100vh */
-  overflow: hidden;
-}
-
-
-
-#image-track {
-  background-color: black;
-  display: flex;
-  gap: 4vmin;
-  will-change: transform;
-  padding-top: 4rem;
-  min-height: 95vh;
-
-}
-
-.image {
-  width: 40vmin;
-  height: 70vmin;
-  object-fit: cover;
-  object-position: 50% 50%;
-  /* updated dynamically for parallax */
-  border-radius: 10px;
-
-
-}
-
-#image-track {
-  padding-left: 35px;
-  font-size: 50px;
-  padding-top: 150px;
-}
-
 #image-track h1 {
   text-align: left;
   padding-top: 16%;
+}
+
+/* Image track fonts */
+.caption {
+  font-size: 40px;
+  /* adjust size */
+  font-family: "Georgia", serif;
+  color: #f0f0f0;
+  /* improve contrast */
+  text-align: center;
 }
