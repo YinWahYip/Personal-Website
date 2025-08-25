@@ -13,7 +13,7 @@ export default function ImageTrack({ images = [] }) {
         segW: 0        // width of one image-set (px)
     });
     const captions = [
-        "1",
+        "✌️✌️",
         "Mr. Fancy Pants",
         "SoFi HQ",
         "In-n-Out",

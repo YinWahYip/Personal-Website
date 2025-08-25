@@ -6,7 +6,7 @@ function DocPage() {
             <div id="doc-page">
                 <h1>Documentation for<br></br> Yin Wah Yip V22.4.3</h1>
                 <h2>
-                    Because an <i>About me</i> would be soooooo much more "interesting"
+                    Learn more about how Yin Wah Works through state of the art documentation!
                 </h2>
                 <div className="scroll-space" />
 
