@@ -110,8 +110,60 @@ body {
 .caption {
   font-size: 40px;
   /* adjust size */
-  font-family: "Georgia", serif;
   color: #f0f0f0;
   /* improve contrast */
   text-align: center;
+}
+
+.projects-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* stack children vertically */
+  align-items: center;
+  /* center horizontally */
+  gap: 2rem;
+  /* space between heading, list, accomplishment */
+  min-height: 50vh;
+  /* optional: gives the section some presence */
+}
+
+.projects-section h1 {
+  font-size: 6rem;
+  /* big hero heading */
+  margin: 0;
+  line-height: 1.1;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 900px;
+  text-align: left;
+  font-size: 1.25rem;
+  /* normal readable size */
+  line-height: 1.9;
+}
+
+.projects-list li+li {
+  margin-top: 0.75rem;
+}
+
+.projects-section li {
+  list-style: none;
+  font-size: 2rem;
+  /* larger text */
+  margin: 1rem 0;
+  text-align: left;
+  max-width: 900px;
+}
+
+.accomplishment {
+  font-size: 2rem;
+  /* match project size */
+  margin-top: 2rem;
+  text-align: center;
+  /* center accomplishment */
 }

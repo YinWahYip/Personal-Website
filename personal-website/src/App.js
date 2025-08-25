@@ -30,11 +30,36 @@ function Home() {
         <h1>A personal website built by Yin Wah</h1>
 
       </header>
-      <div>
-        Projects / What i'm up to?
+
+      <div className="projects-section">
+        <h1>Projects / What I'm up to?</h1>
+        <li>
+          <strong>
+            <a
+              href="https://vuroom.vercel.app/"
+
+            >
+              VUROOM
+            </a>
+          </strong>
+          – Interactive 3D dorm-room visualizer built with JavaScript and Three.js
+        </li>
+        <li><strong>QuarterMaster</strong> – Satirical Python text-based game about weapon inspections</li>
+        <li><strong>Portfolio Website</strong> – Personal site (React + Vercel) showcasing my projects</li>
+
+        <div className="accomplishment">
+          <h3>Recent Accomplishment</h3>
+          <p>🏆 DataFest Philly 2025 – Best Insight Award with my team of 5</p>
+        </div>
       </div>
+
+
+
+
+
+
       {/* rest of your page content so vertical scroll still works */}
-      <div style={{ height: 1000 }} />
+      <div style={{ height: 600 }} />
     </>
   );
 }
