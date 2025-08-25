@@ -1,15 +1,14 @@
 import React from 'react';
 import './CSS/navbar.css';
-import { Link } from 'react-router-dom'; // Import Link
-import DocPage from './Documentation/Documentation';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <nav>
-            <ul>
-                <li style={{ float: 'left' }}><Link to="/">Yin Wah</Link></li>
-                <li><Link to="/documentation">Documentation</Link></li>
-                <li><Link to="/">Home</Link></li>
+        <nav className="navbar">
+            <ul className="navbar-list">
+                <li className="navbar-item"><Link to="/">Yin Wah</Link></li>
+                <li className="navbar-item"><Link to="/documentation">Documentation</Link></li>
+                <li className="navbar-item"><Link to="/">Home</Link></li>
             </ul>
         </nav>
     );

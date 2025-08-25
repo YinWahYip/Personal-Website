@@ -37,29 +37,71 @@ function Home() {
           <strong>
             <a
               href="https://vuroom.vercel.app/"
-
+              target="_blank"
+              rel="noopener noreferrer"
+              className="vuroom-link"
             >
-              VUROOM
+              🛏️ VUROOM
             </a>
           </strong>
-          – Interactive 3D dorm-room visualizer built with JavaScript and Three.js
+          <br></br>
+          &emsp;  &emsp;An interactive 3D dorm-room visualizer built with JavaScript, Three.js, and Blender, giving incoming Villanova students a way to explore residence halls virtually.
         </li>
-        <li><strong>QuarterMaster</strong> – Satirical Python text-based game about weapon inspections</li>
-        <li><strong>Portfolio Website</strong> – Personal site (React + Vercel) showcasing my projects</li>
+
+        <li><strong>🎮 QuarterMaster:</strong>
+          <br></br>
+          &emsp;  &emsp;A satirical, text-based Python game where players inspect bizarre weapons for approval, blending humor with simple mechanics.
+        </li>
+
+        <li>
+          <strong>☁️ AWS Projects: </strong>
+          <br></br>
+          &emsp;  &emsp;Learning and deploying cloud-based applications with AWS services, exploring EC2, S3, and Lambda to build scalable backends.
+        </li>
+        <li>
+          <strong>This website! </strong>
+          Personal site (React + Vercel) showcasing my projects, myself, and some other... interesting things, I'd hope
+        </li>
+
 
         <div className="accomplishment">
           <h3>Recent Accomplishment</h3>
           <p>🏆 DataFest Philly 2025 – Best Insight Award with my team of 5</p>
+          <p>
+            Analyzed a 200k-entry leasing dataset using regression, clustering, and decision trees
+            to uncover actionable insights for the client.
+          </p>
         </div>
+
+        <div className="links-section">
+          <h3>Connect With Me</h3>
+          <div className="links-icons">
+            <a
+              href="https://github.com/YinWahYip"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/yin-wah-yip"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+
       </div>
+      {/* final div, don't touch */}
 
 
 
 
 
 
-      {/* rest of your page content so vertical scroll still works */}
-      <div style={{ height: 600 }} />
     </>
   );
 }
