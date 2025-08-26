@@ -61,7 +61,7 @@ body {
   /* hide edges during wrap */
   touch-action: pan-y;
   cursor: grab;
-  height: 100dvh;
+  height: 100vh;
   overflow: hidden;
   padding-bottom: 75px;
 }
