@@ -29,6 +29,16 @@ body {
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
 
 .App-header {
   font-size: 40px;
