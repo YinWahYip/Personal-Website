@@ -52,7 +52,7 @@ body {
 
 /* controls outer container for your entire image track section. */
 .image-track-wrapper {
-  max-height: 100vh;
+
   /* stage height */
   background: #000;
   display: grid;
