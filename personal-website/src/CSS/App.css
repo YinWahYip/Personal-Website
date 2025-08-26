@@ -53,15 +53,20 @@ body {
 /* controls outer container for your entire image track section. */
 /* outer container fills the viewport */
 .image-track-wrapper {
-  height: 100vh;          /* full screen height */
-  width: 100vw;           /* full screen width */
+  height: 100vh;
+  /* full screen height */
+  width: 100vw;
+  /* full screen width */
   background: #000;
   display: grid;
-  place-items: center;    /* centers child horizontally + vertically */
-  overflow: hidden;       /* hides overflow on both axes */
+  place-items: center;
+  /* centers child horizontally + vertically */
+  overflow: hidden;
+  /* hides overflow on both axes */
   touch-action: pan-y;
   cursor: grab;
-  padding: 0;             /* remove padding so it's truly full-screen */
+  padding-top: 4vh;
+  /* remove padding so it's truly full-screen */
 }
 
 /* inner strip stretches inside wrapper */
@@ -69,13 +74,13 @@ body {
   display: flex;
   gap: 3vmin;
   will-change: transform;
-  min-height: 100%;       /* fill parent's height */
-  min-width: 100%;        /* fill parent's width */
+  min-height: 100%;
+  /* fill parent's height */
+  min-width: 100%;
+  /* fill parent's width */
   background: black;
-  padding: 0;             /* reset if you want edge-to-edge */
   font-size: 50px;
 }
-
 
 /* individual images */
 .image {
