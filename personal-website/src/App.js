@@ -22,7 +22,9 @@ function Home() {
     <>
       <div id="image-track">
         <h1>
-          Adventures Peoples Places
+          Adventures 
+          Peoples <br />
+          Places
         </h1>    <ImageTrack images={images} />
       </div>
 

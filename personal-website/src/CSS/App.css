@@ -53,15 +53,19 @@ body {
 /* controls outer container for your entire image track section. */
 /* outer container fills the viewport */
 .image-track-wrapper {
-  height: 100vh;          /* full screen height */
-  width: 100vw;           /* full screen width */
+  height: 140vh;
+  /* full screen height */
+  width: 100vw;
+  /* full screen width */
   background: #000;
   display: grid;
-  place-items: center;    /* centers child horizontally + vertically */
-  overflow: hidden;       /* hides overflow on both axes */
+  place-items: center;
+  /* centers child horizontally + vertically */
+  overflow: hidden;
+  /* hides overflow on both axes */
   touch-action: pan-y;
   cursor: grab;
-  padding: 0;             /* remove padding so it's truly full-screen */
+  padding-top: 200px;
 }
 
 /* inner strip stretches inside wrapper */
@@ -69,18 +73,18 @@ body {
   display: flex;
   gap: 3vmin;
   will-change: transform;
-  min-height: 100%;       /* fill parent's height */
-  min-width: 100%;        /* fill parent's width */
+  min-height: 100%;
+  /* fill parent's height */
+  min-width: 100%;
+  /* fill parent's width */
   background: black;
-  padding: 0;             /* reset if you want edge-to-edge */
   font-size: 50px;
 }
-
 
 /* individual images */
 .image {
   width: 40vmin;
-  height: 70vmin;
+  height: 80vmin;
   object-fit: cover;
   object-position: 50% 50%;
   /* updated dynamically for parallax */
@@ -91,7 +95,7 @@ body {
 .image {
   width: clamp(220px, 40vmin, 520px);
   aspect-ratio: 5 / 7;
-  height: auto;
+
   /* instead of fixed vmin height */
   border-radius: 10px;
   object-fit: cover;
@@ -107,7 +111,8 @@ body {
 
 #image-track h1 {
   text-align: left;
-
+  width: 30%;
+  padding-top: 20%
 }
 
 /* Image track fonts */
