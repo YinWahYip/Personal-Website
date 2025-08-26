@@ -61,7 +61,7 @@ body {
   overflow: hidden;       /* hides overflow on both axes */
   touch-action: pan-y;
   cursor: grab;
-  padding-top: 0;             /* remove padding so it's truly full-screen */
+  padding: 0;             /* remove padding so it's truly full-screen */
 }
 
 /* inner strip stretches inside wrapper */
@@ -72,8 +72,10 @@ body {
   min-height: 100%;       /* fill parent's height */
   min-width: 100%;        /* fill parent's width */
   background: black;
+  padding: 0;             /* reset if you want edge-to-edge */
   font-size: 50px;
 }
+
 
 /* individual images */
 .image {
